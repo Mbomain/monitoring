@@ -1,0 +1,9 @@
+config:
+  target: "https://laf4r6fpngzuvz35pcp7opm5nq0jcipy.lambda-url.eu-west-3.on.aws/"
+  phases:
+    - duration: 60
+    - arrivalRate: 100
+scenarios:
+  - flow:
+      - get:
+          url: "/ping"
