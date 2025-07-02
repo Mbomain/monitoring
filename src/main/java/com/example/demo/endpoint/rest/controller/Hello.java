@@ -1,10 +1,12 @@
 package com.example.demo.endpoint.rest.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller("/hello")
-public class hello {
+@RestController
+@RequestMapping("/hello")
+public class Hello {
     @GetMapping
     public String index() {
         return "Hello, World!";
